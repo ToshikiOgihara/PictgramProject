@@ -15,4 +15,5 @@ class User < ApplicationRecord
   validates_length_of :password, in: 8..32, message: "パスワードは8文字以上32文字以下に設定してください。"
   validates_confirmation_of :password, allow_blank: true
   
+  has_many :topics
 end
