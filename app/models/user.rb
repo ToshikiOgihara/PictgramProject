@@ -16,4 +16,6 @@ class User < ApplicationRecord
   validates_confirmation_of :password, allow_blank: true
   
   has_many :topics
+  has_many :favorites
+  has_many :favorite_topics, through: :favorites, source: 'topic'
 end
