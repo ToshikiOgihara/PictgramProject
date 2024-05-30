@@ -12,7 +12,7 @@ h1, h2 {
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 20px;
-  background-color: rgma(0, 0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.0);
   
   &:hover {
     color: #fff;
@@ -115,6 +115,18 @@ h1, h2 {
       width: 35px;
       height: 30px;
       margin-left: 20px;
+    }
+    
+    .fa-heart {
+      font-size: 30px;
+    }
+    
+    .fa-regular {
+      color: #000000
+    }
+    
+    .fa-solid {
+      color: #FF0000
     }
   }
 }
